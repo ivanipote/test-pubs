@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Publicités - Mon Gestionnaire de Musique</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #00dbde, #fc00ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .message {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px;
+            border-left: 5px solid #2196f3;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .instructions {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border: 2px dashed #6c757d;
+        }
+        
+        .instructions h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .pub-section {
+            margin: 40px 0;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .pub-section:hover {
+            transform: translateY(-5px);
+        }
+        
+        .pub-zone {
+            background: white;
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border: 2px solid #e9ecef;
+            min-height: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .zone-title {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .stats-link {
+            background: linear-gradient(135deg, #00b09b, #96c93d);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            transition: all 0.3s ease;
+        }
+        
+        .stats-link:hover {
+            transform: scale(1.02);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1a1a2e;
+            color: white;
+            margin-top: 30px;
+        }
+        
+        .code-placeholder {
+            background: #2d3436;
+            color: #dfe6e9;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            width: 100%;
+            margin-top: 15px;
+            text-align: left;
+        }
+        
+        .step-number {
+            background: #667eea;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                border-radius: 10px;
+            }
+            
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .content {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎵 Zone Publicitaire - Test</h1>
+            <p>Simulation de l'onglet "Pubs" pour votre gestionnaire de musique</p>
+        </header>
+        
+        <div class="message">
+            <p>⚠️ <strong>Note importante :</strong> Cette page est un bac à sable. Les pubs s'afficheront seulement quand vous ajouterez vos codes PropellerAds et que la page sera en ligne sur GitHub.</p>
+        </div>
+        
+        <div class="content">
+            <div class="instructions">
+                <h2><span class="step-number">1</span> Comment utiliser cette page</h2>
+                <p>1. Copiez vos codes depuis PropellerAds → "Ad Zones" → "Get Code"</p>
+                <p>2. Collez chaque code dans la zone correspondante ci-dessous</p>
+                <p>3. Téléchargez cette page sur GitHub Pages</p>
+                <p>4. Les pubs réelles apparaîtront automatiquement</p>
+            </div>
+            
+            <!-- SECTION 1 : Bannière Principale -->
+            <div class="pub-section">
+                <h2 class="zone-title">📢 Bannière Principale (728x90)</h2>
+                <p>Placez cette bannière en haut de votre onglet "Pubs"</p>
+                
+                <div class="pub-zone" id="banniere-principale">
+                    <p style="color: #666; margin-bottom: 15px;">⬇️ Votre code PropellerAds apparaîtra ici ⬇️</p>
+                    <div class="code-placeholder">
+                        // Collez ici le code pour une bannière 728x90<br>
+                        // Format recommandé: Banner Ads
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SECTION 2 : Publicités Natives -->
+            <div class="pub-section">
+                <h2 class="zone-title">✨ Publicités Natives (300x250)</h2>
+                <p>Les plus efficaces pour votre onglet ! S'intègrent comme du contenu normal.</p>
+                
+                <div class="pub-zone" id="pub-native">
+                    <p style="color: #666; margin-bottom: 15px;">⬇️ Zone pour publicités natives ⬇️</p>
+                    <div class="code-placeholder">
+                        // Collez ici le code pour Native Ads<br>
+                        // Format: Native / Content Recommendations<br>
+                        // Taille: 300x250 ou 300x600
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SECTION 3 : Liens Textuels -->
+            <div class="pub-section">
+                <h2 class="zone-title">🔗 Liens Recommandés</h2>
+                <p>Liens contextuels qui ressemblent à des suggestions de contenu</p>
+                
+                <div class="pub-zone" id="liens-textuels">
+                    <p style="color: #666; margin-bottom: 15px;">⬇️ Zone pour liens publicitaires ⬇️</p>
+                    <div class="code-placeholder">
+                        // Collez ici le code pour des liens textuels<br>
+                        // Format: In-Page Push ou Native Text
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SECTION 4 : Lien vers vos statistiques -->
+            <a href="https://publisher.propellerads.com/#/report/statistics" target="_blank" class="stats-link">
+                <h3>📊 Voir mes statistiques PropellerAds</h3>
+                <p>Cliquez ici pour suivre vos revenus en temps réel (ouvre votre dashboard)</p>
+                <small>🔒 Ce lien est seulement visible par vous, l'administrateur</small>
+            </a>
+            
+            <div style="margin-top: 30px; padding: 20px; background: #f1f8ff; border-radius: 10px;">
+                <h3>🚀 Prochaines étapes après le test :</h3>
+                <p>1. Si les pubs s'affichent bien, copiez-collez les codes dans votre vrai site</p>
+                <p>2. Ajoutez un badge "Nouvelles offres" sur l'onglet "Pubs" pour attirer les clics</p>
+                <p>3. Surveillez vos revenus quotidiennement dans votre dashboard</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Page de test publicitaire • Gestionnaire de Musique • © 2024</p>
+            <p style="opacity: 0.8; font-size: 0.9rem; margin-top: 10px;">
+                Cette page est sécurisée et ne collecte pas de données personnelles
+            </p>
+        </footer>
+    </div>
+
+    <!-- Emplacement pour les scripts PropellerAds -->
+    <script>
+        // Vos scripts PropellerAds seront ajoutés ici
+        console.log("Page de test publicitaire chargée");
+        
+        // Exemple de code que vous obtiendrez de PropellerAds :
+        /*
+        <script type="text/javascript" src="https://cdn.propellerads.com/..."><\/script>
+        <script>
+            var _propeller = _propeller || [];
+            _propeller.push({
+                zoneID: VOTRE_ID_ICI,
+                ...
+            });
+        <\/script>
+        */
+    </script>
+</body>
+</html>
